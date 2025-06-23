@@ -24,6 +24,12 @@ const nextConfig = {
         protocol: "http",
         hostname: "localhost",
       },
+      // --- START: Add Supabase Domain Here ---
+      {
+        protocol: "https",
+        hostname: "dxtrdfbauobctobmkdrr.supabase.co", // Your Supabase domain
+      },
+      // --- END: Add Supabase Domain Here ---
       {
         protocol: "https",
         hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
