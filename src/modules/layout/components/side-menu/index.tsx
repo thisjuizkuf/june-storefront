@@ -156,7 +156,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                                 Turtles & Tortoises
                               </LocalizedClientLink>
                               <LocalizedClientLink
-                                href="/categories/snake"
+                                href="/categories/snakes"
                                 className="text-lg hover:text-ui-fg-muted"
                                 onClick={close}
                               >
