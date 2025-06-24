@@ -1,6 +1,6 @@
 import { clx } from "@medusajs/ui"
 
-import { getProductPrice } from "@lib/util/get-product-price"
+import { getProductPrice } = from "@lib/util/get-product-price"
 import { HttpTypes } from "@medusajs/types"
 
 export default function ProductPrice({
@@ -22,9 +22,12 @@ export default function ProductPrice({
   }
 
   return (
-    <div className="flex flex-col text-ui-fg-base">
+    // Changed text-ui-fg-base to text-gray-900 for darker color
+    <div className="flex flex-col text-gray-900">
       <span
-        className={clx("text-xl-semi", {
+        // Added font-bold for extra boldness (text-xl-semi is already semi-bold)
+        // Changed text-xl-semi to text-2xl-semi for slightly bigger text
+        className={clx("text-2xl-semi font-bold", {
           "text-ui-fg-interactive": selectedPrice.price_type === "sale",
         })}
       >
@@ -39,7 +42,8 @@ export default function ProductPrice({
       {selectedPrice.price_type === "sale" && (
         <>
           <p>
-            <span className="text-ui-fg-subtle">Original: </span>
+            {/* Made "Original:" text darker */}
+            <span className="text-gray-700">Original: </span>
             <span
               className="line-through"
               data-testid="original-product-price"
