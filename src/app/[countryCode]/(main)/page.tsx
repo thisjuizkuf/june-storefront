@@ -167,7 +167,7 @@ const FeaturedCollectionsSection = () => (
                         name: "Snakes",
                         image: "/images/categories/snake.jpg",
                         fallbackImage: "https://placehold.co/400x250/bfdbfe/1e3a8a?text=Snakes",
-                        link: "/categories/snake"
+                        link: "/categories/snakes"
                     },
                 ].map((collection, index) => (
                     <a key={index} href={collection.link}
