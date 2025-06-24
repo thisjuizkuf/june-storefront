@@ -137,7 +137,7 @@ const FeaturedCollectionsSection = () => (
                         name: "Lizards",
                         image: "/images/categories/lizard.jpg",
                         fallbackImage: "https://placehold.co/400x250/d1d5db/374151?text=Lizards",
-                        link: "/categories/reptiles"
+                        link: "/categories/lizard"
                     },
                     {
                         name: "Birds",
