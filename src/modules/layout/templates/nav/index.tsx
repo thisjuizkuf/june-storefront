@@ -15,8 +15,10 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto border-b duration-200 bg-white border-ui-border-base">
-        <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
+      {/* Increased height to h-20, kept background white, original border */}
+      <header className="relative h-20 mx-auto border-b duration-200 bg-white border-ui-border-base">
+        {/* Changed text color to darker (text-gray-800) and increased size (text-base) */}
+        <nav className="content-container txt-xsmall-plus text-gray-800 flex items-center justify-between w-full h-full text-base">
           
           {/* Left: Side menu */}
           <div className="flex-1 basis-0 h-full flex items-center">
@@ -48,7 +50,7 @@ export default async function Nav() {
             {/* Account icon */}
             <div className="hidden small:flex items-center gap-x-6 h-full">
               <LocalizedClientLink
-                className="hover:text-ui-fg-base"
+                className="hover:text-black" // Adjusted hover color for contrast on light background
                 href="/account"
                 data-testid="nav-account-link"
               >
@@ -60,7 +62,7 @@ export default async function Nav() {
             <Suspense
               fallback={
                 <LocalizedClientLink
-                  className="hover:text-ui-fg-base flex gap-2"
+                  className="hover:text-black flex gap-2" // Adjusted hover color for contrast on light background
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
