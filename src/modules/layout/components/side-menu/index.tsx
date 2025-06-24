@@ -135,18 +135,32 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                                  Birds
                               </LocalizedClientLink>
                               <LocalizedClientLink
-                                href="/categories/reptiles"
+                                href="/categories/lizards"
                                 className="text-lg hover:text-ui-fg-muted"
                                 onClick={close}
                               >
-                                Reptiles
+                                Lizards
                               </LocalizedClientLink>
                               <LocalizedClientLink
-                                href="/categories/amphibian"
+                                href="/categories/geckos"
                                 className="text-lg hover:text-ui-fg-muted"
                                 onClick={close}
                               >
-                                Amphibians
+                                Geckos
+                              </LocalizedClientLink>
+                              <LocalizedClientLink
+                                href="/categories/geckos"
+                                className="text-lg hover:text-ui-fg-muted"
+                                onClick={close}
+                              >
+                                Turtles & Tortoises
+                              </LocalizedClientLink>
+                              <LocalizedClientLink
+                                href="/categories/snake"
+                                className="text-lg hover:text-ui-fg-muted"
+                                onClick={close}
+                              >
+                               Snakes
                               </LocalizedClientLink>
                             </Disclosure.Panel>
                           </li>
