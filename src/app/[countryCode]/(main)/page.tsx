@@ -152,7 +152,7 @@ const FeaturedCollectionsSection = () => (
                         link: "/categories/fish"
                     },
                     {
-                        name: "Turtles&Tortoises",
+                        name: "Tortoises",
                         image: "/images/categories/amphibians.jpg",
                         fallbackImage: "https://placehold.co/400x250/bfdbfe/1e3a8a?text=Turtles",
                         link: "/categories/turtle"
